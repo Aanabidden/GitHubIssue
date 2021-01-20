@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2412C38A25B895C400EEFE5A /* RealmIssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412C38925B895C400EEFE5A /* RealmIssueModel.swift */; };
 		24D4543325B69A62007625E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4543225B69A62007625E4 /* AppDelegate.swift */; };
 		24D4543525B69A62007625E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4543425B69A62007625E4 /* SceneDelegate.swift */; };
 		24D4543725B69A62007625E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4543625B69A62007625E4 /* DetailViewController.swift */; };
@@ -49,6 +50,7 @@
 		16757CFC3B5AA238E2CB65F8 /* Pods_GitHubIssueTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubIssueTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7BB8EF8500624887F48C4A /* Pods-GitHubIssue-GitHubIssueUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubIssue-GitHubIssueUITests.release.xcconfig"; path = "Target Support Files/Pods-GitHubIssue-GitHubIssueUITests/Pods-GitHubIssue-GitHubIssueUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1DF50E06E5BB0C24B4C7BE23 /* Pods_GitHubIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2412C38925B895C400EEFE5A /* RealmIssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmIssueModel.swift; sourceTree = "<group>"; };
 		24D4542F25B69A62007625E4 /* GitHubIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D4543225B69A62007625E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D4543425B69A62007625E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		24D4546525B69D19007625E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2412C38925B895C400EEFE5A /* RealmIssueModel.swift */,
 				24D4546625B69D44007625E4 /* IssueModel.swift */,
 				24D4556225B80940007625E4 /* CommentModel.swift */,
 				24D4546B25B69E61007625E4 /* UserModel.swift */,
@@ -473,6 +476,7 @@
 				24D4543725B69A62007625E4 /* DetailViewController.swift in Sources */,
 				24D4546725B69D44007625E4 /* IssueModel.swift in Sources */,
 				24D4543325B69A62007625E4 /* AppDelegate.swift in Sources */,
+				2412C38A25B895C400EEFE5A /* RealmIssueModel.swift in Sources */,
 				24D4554825B7EF64007625E4 /* IssueListTableViewCell.swift in Sources */,
 				24D4553D25B6CE65007625E4 /* APICaller.swift in Sources */,
 				24D4554225B6CEC6007625E4 /* IssueListViewModel.swift in Sources */,

@@ -40,7 +40,6 @@ class DetailViewModel {
     private func getCommentList() {
         dataFetcher.fetchCommentList(issue.number, success: {
             (comments) -> Void in
-
             self.dataModel = comments
         }) {
             (error) -> Void in
@@ -52,7 +51,7 @@ class DetailViewModel {
     private func configureTableDataSource() {
         tableDataSource.removeAll()
         for comment in dataModel {
-            // sort by updateDate and save in DB
+            // save in DB
             let stringToColor = comment.user.login
             let mainString = stringToColor + ": " + comment.body
             let range = (mainString as NSString).range(of: stringToColor)

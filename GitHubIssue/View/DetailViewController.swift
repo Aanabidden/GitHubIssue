@@ -33,11 +33,7 @@ class DetailViewController: UIViewController {
         } else {
             let alert = UIAlertController.init(title: "No comments available for this issue", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { (_) in
-                if let navController = self.navigationController {
-                     navController.popViewController(animated: true)
-                } else {
-                    self.dismiss(animated: true, completion: {})
-                }
+                // no need to close let user see complete issue body
             }))
             self.present(alert, animated: true, completion: nil)
         }
