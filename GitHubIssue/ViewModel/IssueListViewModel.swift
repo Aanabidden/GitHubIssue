@@ -31,11 +31,19 @@ class IssueListViewModel {
     }
     
     private func getIssueList() {
+        // fetch from DB, if available
         dataFetcher.fetchIssueList(success: {
             (issues) -> Void in
             // sort by updateDate
-            // and save in DB
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssXXX"
             self.dataModel = issues
+                .map { return ($0, dateFormatter.date(from: $0.updatedAt)!) }
+                .sorted { $0.1 > $1.1 }
+                .map(\.0)
+            
+            // and save in DB
         }) {
             (error) -> Void in
             // error handling

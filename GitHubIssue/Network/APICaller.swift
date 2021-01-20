@@ -6,12 +6,13 @@
 //
 
 import Foundation
+let ApiURL = "https://api.github.com/repos/firebase/firebase-ios-sdk/issues"
 
 struct APICaller {
     let defaultSession = URLSession(configuration: URLSessionConfiguration.default)
     func fetchIssueList(success: @escaping (Issue) -> Void,
                         failure: @escaping (Error) -> Void) {
-        let strURL = "https://api.github.com/repos/firebase/firebase-ios-sdk/issues"
+        let strURL = ApiURL
         apiCaller(strURL, success: {
             (data) -> Void in
             // parse Data
@@ -33,7 +34,7 @@ struct APICaller {
     func fetchCommentList(_ issueNum: Int,
                           success: @escaping (Comment) -> Void,
                           failure: @escaping (Error) -> Void) {
-        let strURL = "https://api.github.com/repos/firebase/firebase-ios-sdk/issues/\(issueNum)/comments"
+        let strURL = "\(ApiURL)/\(issueNum)/comments"
         apiCaller(strURL, success: {
             (data) -> Void in
             // parse Data
